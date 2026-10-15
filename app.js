@@ -352,7 +352,7 @@
 
   /* ---------- editor: background upload ---------- */
   // Background quality. 600 dpi is the maximum; lower BG_DPI (e.g. 300) if template.js gets too heavy.
-  const BG_DPI = 600, BG_QUALITY = 0.98, BG_MAX_SIDE = 8192;
+  const BG_DPI = 600, BG_QUALITY = 1, BG_MAX_SIDE = 8192;
   // Draws onto a white canvas and returns a JPEG data URL. If the browser refuses a canvas this big, it retries smaller.
   async function rasterJpeg(w, h, draw) {
     let f = Math.min(1, BG_MAX_SIDE / Math.max(w, h));
